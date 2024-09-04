@@ -10,6 +10,6 @@ def check():
 
     # Check file structure
     if not os.getcwd() == "/project":
-        print(f"This program should have an active directory of /project, but instead is {os.getcwd()}")
+        print(f"This program should have a working directory of /project, but instead is {os.getcwd()}")
 
 check()
