@@ -2,15 +2,6 @@ import importlib.util
 import os
 
 def check():
-    # Check if bs4 is installed
-    package_name = 'bs4'
-
-    spec = importlib.util.find_spec(package_name)
-    if spec is None:
-        print(f"{package_name} is not installed")
-    else:
-        print("beautifulsoup4 successfully installed!")
-
     # Check environment variable
     if 'COMP290' in os.environ:
         env_var_value = os.environ['COMP290']
@@ -26,5 +17,7 @@ def check():
     # Check file structure
     if not os.getcwd() == "/a03":
         print(f"This program should have a working directory of /a03, but instead is {os.getcwd()}")
+    else:
+        print("Program correctly located in /a03!")
 
 check()
